@@ -4,29 +4,53 @@
 }
 .form{
     text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 0.6cm;
 }
 .h1 {
     justify-content: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5cm;
+    text-decoration: underline;
 
 }
 .div{
     background-color: white;
     text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1cm;
+    padding-top: 0.2cm;
+    padding-bottom: 0.2cm;
+    margin-left: 3cm;
+    margin-right: 3cm;
+    margin-bottom: 1cm;
 
 }
 .rowTab{
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+    display:block;
 
 }
 .label{
     display: inline-block;
     text-align: right;
+    vertical-align: top;
 
 }
 .leftTab{
     display: inline-block;
     text-align: left;
-
+    vertical-align: middle;
 }
+.button{
+    background-color: crimson; 
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+}
+
 .d-flex{
     display: flex;
 }
