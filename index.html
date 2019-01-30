@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,79 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
-<body>
-    
+
+<body class="body">
+    <header>
+        <h1 id="title" class="h1 d-flex">
+            Survey Form
+        </h1>
+    </header>
+    <div class="div">
+        <p id="description">
+            What do you think abaut Daniel?
+        </p>
+        <form id="survey-form">
+            <label for="name">*Name:</label>
+            <input type="text" required id="name" placeholder="Enter your name">
+            <label for="email"> *Email: </label>
+            <input type="email" required id="email" placeholder="Enter you Email">
+            <label for="age"> *Age:</label>
+            <input type="number" required min="18" max="100" id="age" placeholder="Age">
+            <label for="currentPos">Which option best describes your current role?</label>
+            <select id="droptown">
+                <option disable value>Select an option </option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Lerner</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="rate">Would you be Daniels friend? </label>
+            <ul>
+                <li class="radio">
+                    <input type="radio" name="radio-button" value="1">
+                    <label for="definitely">Definitely</label>
+                </li>
+                <li>
+                    <input type="radio" name="radio-button" value="1">
+                    <label for="maybe">Maybe</label>
+                </li>
+                <li>
+                    <input type="radio" name="radio-button" value="1">
+                    <label for="not sure">Not sure</label>
+                </li>
+            </ul>
+            <label for="most-like">What do you like most in Daniel? </label>
+            <select name="mostLike" id="most-like">
+                <option disabled value>Select an option</option>
+                <option value="houmor">His Houmor</option>
+                <option value="personalities">Personalities</option>
+                <option value="appearance">Appearance</option>
+            </select>
+            <label for="preferences">Things that should be improved in the future:</label>
+            <ul>
+                <li>
+                    <input type="checkbox">
+                    <label></label>
+                </li>
+                <li></li>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    <label for=""></label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    <label for=""></label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    <label for=""></label>
+                </li>
+            </ul>
+            <label for="comments">Any Comments or Suggestions?</label>
+            <textarea name="comment" id="comments"  placeholder="Enter your comment here..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
+
 </html>

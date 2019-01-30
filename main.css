@@ -1,0 +1,19 @@
+.body {
+    background-color: #117A65;
+
+}
+.h1 {
+    justify-content: center;
+
+}
+.div{
+    background-color: white;
+
+}
+.d-flex{
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
