@@ -20,12 +20,12 @@
         <p id="description">
             What do you think abaut Daniel?
         </p>
-        <form id="survey-form" class="form" >
+        <form id="survey-form" class="form">
             <div class="rowTab">
                 <div class="label">
                     <label for="name">*Name:</label>
                 </div>
-                <div class="rightTab">
+                <div class="leftTab">
                     <input type="text" required id="name" placeholder="Enter your name">
                 </div>
             </div>
@@ -33,43 +33,71 @@
                 <div class="label">
                     <label for="email"> *Email: </label>
                 </div>
-                <div class="rightTab">
+                <div class="leftTab">
                     <input type="email" required id="email" placeholder="Enter you Email">
                 </div>
             </div>
-            <label for="age"> *Age:</label>
-            <input type="number" required min="18" max="100" id="age" placeholder="Age">
-            <label for="currentPos">Which option best describes your current role?</label>
-            <select id="droptown">
-                <option disable value>Select an option </option>
-                <option value="student">Student</option>
-                <option value="job">Full Time Job</option>
-                <option value="learner">Full Time Lerner</option>
-                <option value="other">Other</option>
-            </select>
-            <label for="rate">Would you be Daniels friend? </label>
-            <ul>
-                <li class="radio">
-                    <input type="radio" name="radio-button" value="1">
-                    <label for="definitely">Definitely</label>
-                </li>
-                <li>
-                    <input type="radio" name="radio-button" value="1">
-                    <label for="maybe">Maybe</label>
-                </li>
-                <li>
-                    <input type="radio" name="radio-button" value="1">
-                    <label for="not sure">Not sure</label>
-                </li>
-            </ul>
+            <div class="rowTab">
+                <div class="label">
+                    <label for="age"> *Age:</label>
+                </div>
+                <div class="leftTab">
+                    <input type="number" required min="18" max="100" id="age" placeholder="Age">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="label">
+                    <label for="currentPos">Which option best describes your current role?</label>
+                </div>
+                <div class="leftTab">
+                    <select id="droptown">
+                        <option disable value>Select an option </option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Lerner</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="label">
+                    <label for="rate">Would you be Daniels friend? </label>
+                </div>
+                <div class="leftTab">
+                <ul>
+                    <li class="radio">
+                        <input type="radio" name="radio-button" value="1">
+                        <label for="definitely">Definitely</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="radio-button" value="1">
+                        <label for="maybe">Maybe</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="radio-button" value="1">
+                        <label for="not sure">Not sure</label>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="rowTab">
+                <div class="label">
             <label for="most-like">What do you like most in Daniel? </label>
+        </div>
+        <div class="leftTab">
             <select name="mostLike" id="most-like">
                 <option disabled value>Select an option</option>
                 <option value="houmor">His Houmor</option>
                 <option value="personalities">Personalities</option>
                 <option value="appearance">Appearance</option>
             </select>
+        </div>
+        </div>
+        <div class="rowTab">
+            <div class="label">
             <label for="preferences">Things that should be improved in the future:</label>
+        </div>
+        <div class="leftTab">
             <ul>
                 <li>
                     <input type="checkbox">
@@ -92,9 +120,19 @@
                     <label>Kindness</label>
                 </li>
             </ul>
+        </div>
+        </div>
+        <div class="rowTab">
+            <div class="label">
             <label for="comments">Any Comments or Suggestions?</label>
+        </div>
+        <div class="leftTab">
             <textarea name="comment" id="comments" placeholder="Enter your comment here..."></textarea>
+        </div>
+        </div>
+        <div class="rowTab">
             <button type="submit">Submit</button>
+        </div>
         </form>
     </div>
 </body>

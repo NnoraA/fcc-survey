@@ -11,6 +11,20 @@
 }
 .div{
     background-color: white;
+    text-align: center;
+
+}
+.rowTab{
+
+}
+.label{
+    display: inline-block;
+    text-align: right;
+
+}
+.leftTab{
+    display: inline-block;
+    text-align: left;
 
 }
 .d-flex{
