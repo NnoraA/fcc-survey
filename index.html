@@ -20,11 +20,23 @@
         <p id="description">
             What do you think abaut Daniel?
         </p>
-        <form id="survey-form">
-            <label for="name">*Name:</label>
-            <input type="text" required id="name" placeholder="Enter your name">
-            <label for="email"> *Email: </label>
-            <input type="email" required id="email" placeholder="Enter you Email">
+        <form id="survey-form" class="form" >
+            <div class="rowTab">
+                <div class="label">
+                    <label for="name">*Name:</label>
+                </div>
+                <div class="rightTab">
+                    <input type="text" required id="name" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="label">
+                    <label for="email"> *Email: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" required id="email" placeholder="Enter you Email">
+                </div>
+            </div>
             <label for="age"> *Age:</label>
             <input type="number" required min="18" max="100" id="age" placeholder="Age">
             <label for="currentPos">Which option best describes your current role?</label>
@@ -61,24 +73,27 @@
             <ul>
                 <li>
                     <input type="checkbox">
-                    <label></label>
-                </li>
-                <li></li>
-                <li>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
+                    <label>Attitude</label>
                 </li>
                 <li>
                     <input type="checkbox" name="" id="">
-                    <label for=""></label>
+                    <label>Hair style</label>
                 </li>
                 <li>
                     <input type="checkbox" name="" id="">
-                    <label for=""></label>
+                    <label>Clothes</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    <label>Commons</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    <label>Kindness</label>
                 </li>
             </ul>
             <label for="comments">Any Comments or Suggestions?</label>
-            <textarea name="comment" id="comments"  placeholder="Enter your comment here..."></textarea>
+            <textarea name="comment" id="comments" placeholder="Enter your comment here..."></textarea>
             <button type="submit">Submit</button>
         </form>
     </div>
